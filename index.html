@@ -2,11 +2,44 @@
 <html>
     <head>
         <meta charset="utf-8">
+        
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script src="../Users/jwy/Desktop/코딩/Git/cleats01/jquery-3.6.0.min.js"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>slick | slide</title> 
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+        <style>/* 임시 삽입: 확인용 */ 
+            .slick-sample{width: 100%;height: 200px;} 
+            .slick-sample .slick-list{height: 100%;} 
+        </style>
+
     </head>
     <body>
-        <p style="text-align:center;">나와 어울리는 직업은?</p>
-        <p style="font-size:500%;">나와 어울리는 직업은?</p>
+        <p style="font-size:300%;text-align:center;color:green">나와 어울리는 직업은?</p>
+
+        <div class="slick-sample"> 
+            <div>Slide 1</div> 
+            <div>Slide 2</div> 
+            <div>Slide 3</div> 
+        </div> 
+        
+        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> 
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+        <script> 
+            $(document).ready(function(){ 
+                $('.slick-sample').slick({ 
+                    dots: true 
+                }); 
+            }); 
+        </script>
 
 
+
+
+    
     </body>
 </html>
