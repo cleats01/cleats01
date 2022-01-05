@@ -82,7 +82,7 @@
                     resultMessege = "감성샷! 좋아요 받을 일만 남았다"
                     break;
                 case "2.보통":
-                    resultMessege = "평범샷. 스토리에 올리긴 괜찮을지도?"
+                    resultMessege = "평범샷. 스토리에나 올려볼까?"
                     break;
                 case "3.별로":
                     resultMessege = "흠... 다시 찍어보자"
@@ -103,13 +103,13 @@
                 var labelTitle;
                 switch (prediction[i].className) {
                     case "1.감성":
-                        labelTitle = "감성지수"
+                        labelTitle = "감성 수치"
                         break;
                     case "2.보통":
-                        labelTitle = "평범지수"
+                        labelTitle = "평범 수치"
                         break;
                     case "3.별로":
-                        labelTitle = "별로지수"
+                        labelTitle = "별로 수치"
                         break;
                     default:
                         labelTitle = "알수없음"
@@ -117,7 +117,7 @@
                 //var label = "<div class='shot-label d-flex align-items-center'>" + labelTitle + "</div>"
                 //var bar = "<div class='bar-container position-relative container'><div class='box-" + prediction[i].className + "-box'></div><div class='bar- d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
                 const classPrediction =
-                    labelTitle + " : " + prediction[i].probability.toFixed(2);
+                    labelTitle + " : " + prediction[i].probability.toFixed(2)*100 + "%";
                 labelContainer.childNodes[i].innerHTML = classPrediction;
             }
         }
