@@ -9,6 +9,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-61d57ce1cd07b24a"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5LXE4DWWMR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-5LXE4DWWMR');
+    </script>
 </head>
 
 <body>
@@ -70,7 +79,6 @@
             }
         }
 
-        // run the webcam image through the image model
         async function predict() {
             // predict can take in an image, video or canvas html element
             var image = document.getElementById("insta-photo")
@@ -78,7 +86,7 @@
             prediction.sort((a, b) => parseFloat(b.probability) - parseFloat(a.probability));
             console.log(prediction[0].className);
             var resultMessege;
-            switch (prediction[0].className){
+            switch (prediction[0].className) {
                 case "1.감성":
                     resultMessege = "감성샷! 좋아요 받을 일만 남았다"
                     break;
@@ -118,7 +126,7 @@
                 //var label = "<div class='shot-label d-flex align-items-center'>" + labelTitle + "</div>"
                 //var bar = "<div class='bar-container position-relative container'><div class='box-" + prediction[i].className + "-box'></div><div class='bar- d-flex justify-content-center align-items-center " + prediction[i].className + "-bar' style='width: " + barWidth + "'><span class='d-block percent-text'>" + Math.round(prediction[i].probability.toFixed(2) * 100) + "%</span></div></div>"
                 const classPrediction =
-                    labelTitle + " : " + prediction[i].probability.toFixed(2)*100 + "%";
+                    labelTitle + " : " + prediction[i].probability.toFixed(2) * 100 + "%";
                 labelContainer.childNodes[i].innerHTML = classPrediction;
             }
         }
@@ -162,12 +170,12 @@
                     $('.image-title').html(input.files[0].name);
                 };
                 reader.readAsDataURL(input.files[0]);
-                init().then(()=>{
+                init().then(() => {
                     console.log("loading");
                     predict();
                     $('#loading').hide();
                 });
-                
+
             } else {
                 removeUpload();
             }

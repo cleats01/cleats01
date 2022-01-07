@@ -1,3 +1,5 @@
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
 .body {
     font-family: sans-serif;
     background-color: #ffffff;
@@ -84,7 +86,7 @@
     font-weight: 100;
     text-transform: uppercase;
     color: #0e5833;
-    font-family: NanumSquareR;
+    font-family: 'NanumSquare';
     font-size: 1.5rem;
     line-height: 1.53;
     text-align: center;
@@ -130,7 +132,7 @@
   }
 
   .navbar-light .navbar-brand {
-    font-family: NanumSquareR;
+    font-family: 'NanumSquare';
     line-height: 1.68;
     text-align: left;
     color: #10aa58;
@@ -144,17 +146,20 @@
   }
 
   .title {
-    font-family: NanumSquareR;
+    font-family: 'NanumSquare';
+    font-weight: bold;
     line-height: 1.67;
     text-align: center;
     color: #14882d;
+    margin-bottom: 3rem;
   }
 
   .subtitle{
-    font-family: NanumSquareR;
+    font-family: 'NanumSquare';
     line-height: 1.53;
     text-align: center;
     color: #5baf54;
+    margin-bottom: 2rem;
   }
 
   /* On screens that are 600px or less, set the background color to olive */
@@ -221,4 +226,7 @@
 #label-container {
   width: 80%;
   margin: 0 auto;
+  color:rgba(117, 204, 84, 1);
+  font-family: 'NanumSquare';
+  margin-bottom: 1rem;
 }
