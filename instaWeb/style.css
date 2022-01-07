@@ -11,6 +11,8 @@
     border: solid 1,5px #f6f7fa;
     background-color: #f6f7fa;
     padding: 13% 7%;
+    max-width: 800px;
+    margin: 0 auto;
   }
   
   .file-upload-btn {
@@ -158,7 +160,7 @@
     font-family: 'NanumSquare';
     line-height: 1.53;
     text-align: center;
-    color: #5baf54;
+    color: #9bdd95;
     margin-bottom: 2rem;
   }
 
