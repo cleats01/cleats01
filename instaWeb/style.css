@@ -1,7 +1,7 @@
 @import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 
 .body {
-    font-family: sans-serif;
+    font-family: 'NanumSquare', sans-serif;
     background-color: #ffffff;
   }
   
@@ -148,8 +148,9 @@
   }
 
   .title {
-    font-family: 'NanumSquare';
+    font-family: 'Dongle', 'NanumSquare';
     font-weight: bold;
+    font-size: 3.5rem;
     line-height: 1.67;
     text-align: center;
     color: #14882d;
@@ -158,6 +159,7 @@
 
   .subtitle{
     font-family: 'NanumSquare';
+    font-size: 1.5rem;
     line-height: 1.53;
     text-align: center;
     color: #9bdd95;
