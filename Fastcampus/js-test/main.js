@@ -1,4 +1,11 @@
-const numbers = [1,2,3,4]
+let str = `
+010-2979-7178
+cleats02@naver.com
+https://naver.com
+The quick brown fox jumps over the lazy dog.
+abbcccdddd
+`
 
-numbers.reverse()
-console.log(numbers)
+console.log(
+  str.match(/.{1,}(?=@)/g)
+)
