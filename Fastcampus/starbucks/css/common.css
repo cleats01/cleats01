@@ -120,7 +120,7 @@ header .sub-menu {
   display: flex;
 }
 header .sub-menu ul.menu {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;1
   display: flex;
 }
 header .sub-menu ul.menu li {
